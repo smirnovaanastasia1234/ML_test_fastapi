@@ -16,3 +16,15 @@ def classif(txt):
 
 st.write ("Тональность текста:")
 st.write(classif(text))
+
+def test_classif():
+  s = classif("Я люблю зиму")
+  assert s == 'POSITIVE'
+  
+def test_classif():
+  s = classif("Я ненавижу зиму")
+  assert s == 'NEGATIVE'
+  
+ def test_classif():
+  s = classif("Зима")
+  assert s == 'NEUTRAL'
