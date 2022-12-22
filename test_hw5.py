@@ -25,6 +25,6 @@ def test_classif():
   s = classif("Я ненавижу зиму")
   assert s == 'NEGATIVE'
   
- def test_classif():
+def test_classif():
   s = classif("Зима")
   assert s == 'NEUTRAL'
