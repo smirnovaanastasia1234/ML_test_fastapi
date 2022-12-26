@@ -18,11 +18,11 @@ st.write ("Тональность текста:")
 st.write(classif(text))
 
 def test_classif_1():
-  s = classif("Я люблю зиму")
+  s = classif("Я люблю снег")
   assert s == 'POSITIVE'
   
 def test_classif_2():
-  s = classif("Я ненавижу зиму")
+  s = classif("Я ненавижу снег")
   assert s == 'NEGATIVE'
   
 def test_classif_3():
